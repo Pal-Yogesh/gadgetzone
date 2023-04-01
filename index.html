@@ -13,10 +13,12 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/electronic.css" />
+    <link rel="stylesheet" href="./css/load.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
     <script src="./js/electronic.js"></script>
   </head>
-  <body>
+  <body onload="myFunction()">
+    <div id="load"></div>
     <header>
       <div id="header">
         <div id="logo">
@@ -296,6 +298,13 @@
   <!-- Copyright -->
 </footer>
 <!-- Footer -->
+
+<script>
+  var preloader = document.getElementById('load');
+  function myFunction(){
+      preloader.style.display = 'none';
+  }
+  </script>
 
 
   </body>
